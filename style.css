@@ -4,7 +4,7 @@
 ===========================*/
 :root {
   --font-family: "Inter", sans-serif;
-  --primary: #155bd5;
+  --primary: #f84b68;
   --primary-dark: #1c3ab6;
   --primary-light: #e2f1ff;
   --accent: #00d4d7;
@@ -405,7 +405,7 @@ p {
 
 /*===== NAVBAR NINE =====*/
 .navbar-area.navbar-nine {
-  background: #155bd5;
+  background: #f84b68;
   padding: 10px 0;
   position: absolute;
   left: 0;
@@ -1025,16 +1025,29 @@ p {
   background: var(--gray-4);
   color: var(--dark-3);
   pointer-events: none;
-} */
+} 
 
 /*======================================
     header Area CSS
 ========================================*/
+
 .header-eight {
   position: relative;
   padding: 160px 0 100px 0;
   background: var(--primary);
   height: 750px;
+}
+@media (min-width: 200px) and (max-width: 767px) {
+  .header-eight {
+    padding: 100px 0 100px 0;
+    height: 650px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 913px) {
+  .header-area {
+    padding: 100px 0 100px 0;
+  }
 }
 
 .header-content {
@@ -1045,6 +1058,10 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+}
+.carousel-indicators {
+  position: relative;
 }
 .carousel-inner {
   height: 490px;
@@ -1168,8 +1185,29 @@ p {
   background-color: #d4d0d0ad;
   padding-top: 120px;
   padding-bottom: 90px;
-  min-height: 780px;
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-area {
+    height: 680px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .tab-content {
+    min-height: 320px;
+    width: 285px;
+    left: 430px;
+    bottom: 400px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-image-five {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-five {
     padding-top: 100px;
@@ -1538,7 +1576,7 @@ p {
   width: 300px;
 }
 #quizzie .answer-wrap {
-  background: #155bd5;
+  background: #f84b68;
   -moz-transition: background-color 0.5s ease;
   -o-transition: background-color 0.5s ease;
   -webkit-transition: background-color 0.5s ease;
@@ -1548,7 +1586,7 @@ p {
   margin-right: auto;
 }
 #quizzie .answer-wrap:hover {
-  background: #1283ce;
+  background: #ff1d43;
 }
 #quizzie .answer-text {
   color: #ffffff;
