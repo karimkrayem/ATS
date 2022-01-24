@@ -4,7 +4,7 @@
   font-family: "Futura";
   font-style: normal;
   font-display: swap;
-  src: url("/assets/fonts/futara/futura\ medium\ bt.ttf");
+  src: url("/assets/fonts/futara/futura\ light\ bt.ttf");
 }
 /*===========================
   COMMON css 
@@ -12,7 +12,7 @@
 :root {
   --font-family: "futura", sans-serif;
   --primary: #f84b68;
-  --primary-dark: #1c3ab6;
+  --primary-dark: #ff002bef;
   --primary-light: #e2f1ff;
   --accent: #00d4d7;
   --accent-dark: #00bac1;
@@ -497,6 +497,12 @@ p {
     padding: 10px 16px;
   }
 }
+
+@media (max-width: 991px) {
+  .sub-menu.collapse:not(.show)::after {
+    display: none;
+  }
+}
 @media only screen and (min-width: 1200px) and (max-width: 1399px),
   only screen and (min-width: 1400px) {
   .navbar-area.navbar-nine .navbar .navbar-nav {
@@ -624,6 +630,7 @@ p {
     display: none;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px),
   (max-width: 767px) {
   .navbar-area.navbar-nine .navbar .navbar-nav .nav-item .sub-menu.show {
@@ -1196,6 +1203,19 @@ p {
   padding-bottom: 90px;
 }
 
+@media (min-width: 991px) {
+  .about-five {
+    height: 720px;
+  }
+}
+
+@media (min-width: 991px) {
+  .about-area h2 {
+    white-space: nowrap;
+    right: 500px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .about-area {
     height: 680px;
@@ -1317,12 +1337,28 @@ p {
   position: relative;
   min-height: 320px;
 }
+
+@media (min-width: 992px) {
+  .about-five-content .about-five-tab .tab-content {
+    width: 600px;
+    left: 460px;
+    bottom: 400px;
+  }
+}
 .about-five-content .about-five-tab .tab-content p {
   margin-bottom: 20px;
   font-weight: 480;
   color: #000000;
   text-align: justify;
   position: relative;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .about-five-content .about-five-tab .tab-content p {
+    font-size: 16px;
+  }
 }
 .about-five-content .about-five-tab .tab-content p:last-child {
   margin: 0;
