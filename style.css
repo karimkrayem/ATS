@@ -1,9 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: "Futura";
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/futara/futura\ medium\ bt.ttf");
+}
 /*===========================
   COMMON css 
 ===========================*/
 :root {
-  --font-family: "Inter", sans-serif;
+  --font-family: "futura", sans-serif;
   --primary: #f84b68;
   --primary-dark: #1c3ab6;
   --primary-light: #e2f1ff;
@@ -431,6 +438,7 @@ p {
 
 .navbar-area.navbar-nine .navbar-brand {
   margin: 0;
+  justify-content: center;
 }
 .navbar-area.navbar-nine .navbar {
   position: relative;
@@ -1037,14 +1045,14 @@ p {
   background: var(--primary);
   height: 750px;
 }
-@media (min-width: 200px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .header-eight {
     padding: 100px 0 100px 0;
-    height: 650px;
+    height: 670px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 913px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .header-area {
     padding: 100px 0 100px 0;
   }
@@ -1077,13 +1085,14 @@ p {
 #hero-area h1 {
   color: white;
   bottom: 30px;
+  letter-spacing: 1.5px;
 }
 #hero-area p {
   color: rgb(255, 255, 255);
   text-align: center;
-  font-size: 30px;
-  font-weight: 50;
-  letter-spacing: 1px;
+  font-size: 28px;
+  font-weight: 100;
+  letter-spacing: 0.7px;
   line-height: 1.2;
 }
 
@@ -1202,7 +1211,7 @@ p {
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .about-image-five {
     display: none;
   }
