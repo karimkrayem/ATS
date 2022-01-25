@@ -83,7 +83,6 @@
             break;
 
           default:
-            console.log(`Sorry, we are out of .`);
         }
       }
     });
@@ -177,5 +176,14 @@
     });
   });
 
-  ("use strict");
+  let sidebarLeftOpen = document.querySelector(".sidebar-left .open");
+  let overlayLeft = document.querySelector(".overlay-left");
+
+  sidebarLeftOpen.addEventListener("click", function () {});
+
+  document.querySelector(".menu-title").addEventListener("click", function () {
+    const closeSideBar = document
+      .querySelector(".sidebar-left .open")
+      .classList.remove(".close");
+  })("use strict");
 })();

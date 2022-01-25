@@ -2,10 +2,18 @@
 
 @font-face {
   font-family: "Futura";
+  font-style: bold;
+  font-display: swap;
+  src: url("/assets/fonts/futara/Futura\ Bold.otf") format("woff2");
+}
+
+@font-face {
+  font-family: "Futura";
   font-style: normal;
   font-display: swap;
-  src: url("/assets/fonts/futara/futura\ light\ bt.ttf");
+  src: url("/assets/fonts/futara/futura\ light\ bt.ttf") format("woff2");
 }
+
 /*===========================
   COMMON css 
 ===========================*/
@@ -344,6 +352,17 @@ p {
   position: relative;
   z-index: 5;
   font-size: px;
+  height: 150px;
+}
+.section-title-four {
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 5;
+  font-size: px;
+  height: 150px;
 }
 .section-title-five .price-simulation {
   font-size: 16px;
@@ -358,6 +377,7 @@ p {
     margin-bottom: 35px;
   }
 }
+
 .section-title-five h6 {
   font-weight: 600;
   display: inline-block;
@@ -374,6 +394,12 @@ p {
   .section-title-five h2 {
     font-size: 2rem;
     line-height: 2.8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-title-five {
+    height: 250px;
   }
 }
 @media (max-width: 767px) {
@@ -873,7 +899,7 @@ p {
   line-height: 40px;
   text-align: center;
   border: 1px solid rgba(238, 238, 238, 0.425);
-  border-radius: 50%;
+
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -1005,7 +1031,7 @@ p {
 }
 .sidebar-left .sidebar-content .sidebar-social ul li a:hover {
   color: var(--white);
-  background-color: rgb(43, 138, 182);
+  background-color: #f84b68;
   border-color: transparent;
 }
 
@@ -1021,6 +1047,10 @@ p {
 }
 .overlay-left.open {
   display: block;
+}
+
+.hidden {
+  display: none;
 }
 
 /* ===== Buttons Css ===== */
@@ -1298,6 +1328,7 @@ p {
 .about-five-content .about-five-tab nav .nav-tabs {
   border: none;
 }
+
 .about-five-content .about-five-tab nav button {
   border: none;
   color: var(--dark-1);
@@ -1322,10 +1353,10 @@ p {
   }
 }
 .about-five-content .about-five-tab nav button:hover {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .about-five-content .about-five-tab nav button.active {
-  background-color: #b4b1ad;
+  background-color: #f84b68;
   color: black;
 }
 .about-five-content .about-five-tab nav button:last-child {
@@ -1415,10 +1446,69 @@ p {
 ===========================*/
 #services {
   position: relative;
+  height: 1500px;
 }
 
-.section-title-five {
-  position: relative;
+@media (min-width: 768px) and (max-width: 991px) {
+  #services {
+    height: 1980px;
+  }
+}
+
+@media (max-width: 768px) {
+  #services {
+    height: 2000px;
+  }
+}
+
+@media (max-width: 414px) {
+  #services {
+    height: 3430px;
+  }
+}
+
+@media (max-width: 540px) {
+  #services {
+    height: 3430px;
+  }
+}
+
+@media (max-width: 280px) {
+  #services {
+    height: 3800px;
+  }
+}
+
+.section-title-four {
+  height: 350px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-title-four {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title-four {
+    height: 500px;
+  }
+}
+
+@media (max-width: 280px) {
+  .section-title-four {
+    height: 700px;
+  }
+}
+
+.section-title-four h6 {
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 15px;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 30px;
+  padding: 8px 30px;
 }
 
 .services-eight {
@@ -1537,9 +1627,14 @@ p {
 
 #quizzie {
   padding: 5% 0;
+
   /* Individual Steps/Sections */
   /* Content */
 }
+#qust {
+  white-space: normal;
+}
+
 #quizzie .titre-quizz {
   font-size: 28px;
   border: none;
@@ -1548,9 +1643,8 @@ p {
   padding: 0;
   margin-right: 20px;
   position: relative;
-  background-color: var(--white);
   padding: 10px 18px;
-  border-radius: 4px;
+
   text-transform: capitalize;
   height: 70px;
 }
@@ -1609,16 +1703,21 @@ p {
   color: rgba(2, 0, 0, 0.555);
 }
 #quizzie .question-wrap {
+  font-size: 15px;
+}
+
+.question-deux {
+  font-size: 20px;
 }
 #quizzie .answer-wrap {
   display: block;
 
   margin: 1em 25%;
-  -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
-  border-radius: 22px;
+
   padding: 30px 100px;
-  width: 300px;
+  width: 200px;
+  height: 50px;
 }
 #quizzie .answer-wrap {
   background: #f84b68;
@@ -1635,23 +1734,26 @@ p {
 }
 #quizzie .answer-text {
   color: #ffffff;
-  font-size: 30px;
+  font-size: 15px;
   font-family: "inter", sans-serif;
   font-weight: 500;
   line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
 }
 
 #quizzie .answer-wrap-value .answer-text-value {
-  font-size: 30px;
+  font-size: 1px;
   color: rgb(66, 64, 64);
   font-weight: 400;
   bottom: 10px;
   line-height: 2;
   text-align: center;
+  display: inline-block;
 }
 
 #quizzie .answer-wrap-value {
-  font-size: 40px;
+  font-size: 20px;
   padding: 40px 30px;
   border: solid 1px var(--shadow-4);
   border-radius: 10px;
@@ -1662,11 +1764,11 @@ p {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   font-weight: 500;
-  width: 50%;
+  width: 200px;
+  height: 130px;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
-  position: static;
 }
 #quizzie .answer-wrap-value {
   box-shadow: var(--shadow-4);
@@ -1980,6 +2082,46 @@ p {
   pointer-events: none;
 }
 
+/* notre équipe */
+
+#photoTeam {
+  justify-content: center;
+  position: relative;
+}
+
+#photoTeam1 {
+  justify-content: center;
+  position: relative;
+}
+
+#pics {
+  justify-content: center;
+  width: 350px;
+  position: relative;
+}
+
+.team4 {
+  height: 700px;
+}
+
+@media (max-width: 991px) {
+  .team4 {
+    height: 900px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+  #photoTeam {
+    height: 360px;
+  }
+}
+
+@media (max-width: 767px) {
+  .team4 {
+    height: 1160px;
+  }
+}
+
 /* carousel review */
 
 #testify {
@@ -2004,7 +2146,7 @@ p {
 .ud-single-testimonial {
   padding: 30px;
   -webkit-box-shadow: 0px 60px 120px -20px #ebeffd;
-  box-shadow: 0px 60px 120px -20px #ebeffd;
+  box-shadow: 0px 60px 120px -20px #00000015;
   background: var(--white);
   margin-bottom: 50px;
 }
