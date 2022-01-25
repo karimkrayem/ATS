@@ -82,6 +82,7 @@
   <!--====== NAVBAR NINE PART ENDS ======-->
 
   <!--====== SIDEBAR PART START ======-->
+  f
 
   <div class="sidebar-left">
     <div class="sidebar-close">
@@ -96,12 +97,13 @@
       <div class="sidebar-menu">
         <h5 class="menu-title">Pour en savoir plus</h5>
         <ul>
-          <li><a href="#hero-area">Qui sommes nous?</a></li>
-          <li><a href="#services">Nos services</a></li>
-          <li><a href="#pricing">Simulation de forfaits</a></li>
-          <li><a href="#contact">Contactez-nous</a></li>
+          <li><a  onclick="closeSideBar()" href="#hero-area">Qui sommes nous?</a></li>
+          <li><a  onclick="closeSideBar()" href="#services">Nos services</a></li>
+          <li><a  onclick="closeSideBar()" href="#pricing">Simulation de forfaits</a></li>
+          <li><a  onclick="closeSideBar()" href="#contact">Contactez-nous</a></li>
         </ul>
       </div>
+
       <!-- menu -->
       <div class="sidebar-social align-items-center justify-content-center">
         <h5 class="social-title">Rejoignez-nous sur</h5>
@@ -995,6 +997,8 @@ Si vous avez des besoins ponctuels pour des conseils fiscaux selon des projets, 
 
 
 
+
+
   <a href="#" class="scroll-top btn-hover">
     <i class="lni lni-chevron-up"></i>
   </a>
@@ -1038,6 +1042,12 @@ Si vous avez des besoins ponctuels pour des conseils fiscaux selon des projets, 
       
     
     });
+
+    let closeSideBar = function(){sidebarLeft.classList.remove("open");
+      overlayLeft.classList.remove("open")
+      navbarTogglerNine.classList.remove("active");}
+
+      
 
     //========= glightbox
     GLightbox({

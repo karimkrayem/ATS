@@ -1371,7 +1371,7 @@ p {
 
 @media (min-width: 992px) {
   .about-five-content .about-five-tab .tab-content {
-    width: 600px;
+    width: 100%;
     left: 460px;
     bottom: 400px;
   }
