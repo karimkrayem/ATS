@@ -3,6 +3,7 @@
 @font-face {
   font-family: "Futura";
   font-style: bold;
+
   font-display: swap;
   src: url("/assets/fonts/futara/Futura\ Bold.otf") format("woff2");
 }
@@ -10,6 +11,7 @@
 @font-face {
   font-family: "Futura";
   font-style: normal;
+
   font-display: swap;
   src: url("/assets/fonts/futara/futura\ light\ bt.ttf") format("woff2");
 }
@@ -1466,7 +1468,7 @@ p {
 
 @media (max-width: 768px) {
   #services {
-    height: 2000px;
+    height: 3430px;
   }
 }
 
@@ -1528,7 +1530,7 @@ p {
     padding: 80px 0 50px 0;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .services-eight {
     padding: 60px 0 30px 0;
   }
