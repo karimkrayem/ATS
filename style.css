@@ -222,6 +222,12 @@ p {
   border-radius: 4px;
   border: 1px solid transparent;
 }
+
+.retry {
+  font-size: 10px;
+  padding: 6px;
+}
+
 .btn:hover {
   color: inherit;
 }
@@ -268,6 +274,9 @@ p {
   width: 40px;
   height: 40px;
   line-height: 40px;
+}
+
+.retry:hover {
 }
 
 /* ===== Buttons Css ===== */
@@ -1382,7 +1391,7 @@ p {
   color: #000000;
   text-align: justify;
   position: relative;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 1.6;
 }
 
@@ -1633,6 +1642,7 @@ p {
 }
 #qust {
   white-space: normal;
+  height: 20px;
 }
 
 #quizzie .titre-quizz {
@@ -1706,9 +1716,6 @@ p {
   font-size: 15px;
 }
 
-.question-deux {
-  font-size: 20px;
-}
 #quizzie .answer-wrap {
   display: block;
 
@@ -1775,6 +1782,11 @@ p {
 }
 #quizzie .answer-wrap-value:hover {
   box-shadow: var(--shadow-6);
+}
+@media (max-width: 768px) {
+  #quizzie .question-wrap {
+    font-size: 10px;
+  }
 }
 
 .btnbtn {
