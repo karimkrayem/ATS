@@ -1687,7 +1687,7 @@ p {
 
 .pricing-fourteen {
   padding: 100px 0;
-  background-color: #fafafa;
+  background-color: #000000;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .pricing-fourteen {
@@ -1716,14 +1716,25 @@ p {
   height: 20px;
 }
 
+@media (max-width: 327px) {
+  .question-une {
+    font-size: 13px;
+  }
+}
 @media (max-width: 310px) {
   .question-une {
     font-size: 11px;
   }
 }
+
 @media (max-width: 280px) {
   .question-une {
     font-size: 11px;
+  }
+}
+@media (max-width: 244px) {
+  .question-une {
+    font-size: 10px;
   }
 }
 
@@ -1794,17 +1805,24 @@ p {
 #quizzie .question-deux {
   color: rgba(2, 0, 0, 0.555);
 }
-@media (max-width: 280px) {
+
+@media (max-width: 327px) {
   .question-deux {
     font-size: 13px;
   }
 }
-
-@media (max-width: 310px) {
-  .question-une {
+@media (max-width: 285px) {
+  .question-deux {
     font-size: 11px;
   }
 }
+
+@media (max-width: 244px) {
+  .question-deux {
+    font-size: 9px;
+  }
+}
+
 #quizzie .question-wrap {
   font-size: 15px;
 }
