@@ -175,15 +175,5 @@
       });
     });
   });
-
-  let sidebarLeftOpen = document.querySelector(".sidebar-left .open");
-  let overlayLeft = document.querySelector(".overlay-left");
-
-  sidebarLeftOpen.addEventListener("click", function () {});
-
-  document.querySelector(".menu-title").addEventListener("click", function () {
-    const closeSideBar = document
-      .querySelector(".sidebar-left .open")
-      .classList.remove(".close");
-  })("use strict");
+  ("use strict");
 })();
