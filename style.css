@@ -467,11 +467,19 @@ p {
   height: 9%;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px),
-  (max-width: 767px) {
-  .navbar-area.navbar-nine {
-    padding: 10px 0;
-    height: 7%;
+@media (max-width: 912px) {
+  .sticky {
+    height: 80px;
+  }
+}
+@media (max-width: 375px) {
+  .sticky {
+    height: 50px;
+  }
+}
+@media (max-width: 414px) {
+  .sticky {
+    height: 50px;
   }
 }
 
@@ -2078,6 +2086,36 @@ p {
   max-width: 170px;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
+}
+
+.white-logo {
+  height: 40px;
+}
+
+@media (max-width: 375px) {
+  .white-logo {
+    height: 30px;
+    display: block;
+  }
+}
+@media (max-width: 390px) {
+  .white-logo {
+    height: 30px;
+    display: block;
+  }
+}
+@media (max-width: 414px) {
+  .white-logo {
+    height: 30px;
+    display: block;
+  }
+}
+.black-logo {
+  height: 60px;
+}
+
+.red-icon-logo {
+  height: 70px;
 }
 
 /* ===== Buttons Css ===== */
