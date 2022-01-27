@@ -1486,7 +1486,7 @@ p {
 #services {
   position: relative;
   height: 1500px;
-  background-color: var(--light-3);
+  background-color: #fafafa;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1687,7 +1687,7 @@ p {
 
 .pricing-fourteen {
   padding: 100px 0;
-  background-color: var(--light-3);
+  background-color: #fafafa;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .pricing-fourteen {
