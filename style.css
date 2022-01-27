@@ -422,6 +422,12 @@ p {
 .section-title-five p {
   color: var(--dark-3);
 }
+
+@media (max-width: 302px) {
+  .section-title-five {
+    height: 300px;
+  }
+}
 @media (max-width: 280px) {
   .section-title-five {
     height: 400px;
@@ -1480,6 +1486,7 @@ p {
 #services {
   position: relative;
   height: 1500px;
+  background-color: var(--light-3);
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1511,8 +1518,18 @@ p {
     height: 3430px;
   }
 }
+@media (max-width: 360px) {
+  #services {
+    height: 3600px;
+  }
+}
 
-@media (max-width: 280px) {
+@media (max-width: 314px) {
+  #services {
+    height: 3750px;
+  }
+}
+@media (max-width: 283px) {
   #services {
     height: 3800px;
   }
@@ -1534,21 +1551,33 @@ p {
   }
 }
 
-@media (max-width: 280px) {
+@media (max-width: 469px) {
   .section-title-four {
-    height: 700px;
-  }
-}
-
-@media (max-width: 360px) {
-  .section-title-four {
-    height: 580px;
+    height: 550px;
   }
 }
 
 @media (max-width: 375px) {
   .section-title-four {
     height: 560px;
+  }
+}
+
+@media (max-width: 360px) {
+  .section-title-four {
+    height: 650px;
+  }
+}
+
+@media (max-width: 313px) {
+  .section-title-four {
+    height: 700px;
+  }
+}
+
+@media (max-width: 280px) {
+  .section-title-four {
+    height: 850px;
   }
 }
 
@@ -1687,9 +1716,14 @@ p {
   height: 20px;
 }
 
+@media (max-width: 310px) {
+  .question-une {
+    font-size: 11px;
+  }
+}
 @media (max-width: 280px) {
   .question-une {
-    font-size: 13px;
+    font-size: 11px;
   }
 }
 
@@ -1763,6 +1797,12 @@ p {
 @media (max-width: 280px) {
   .question-deux {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 310px) {
+  .question-une {
+    font-size: 11px;
   }
 }
 #quizzie .question-wrap {
