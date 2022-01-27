@@ -455,7 +455,7 @@ p {
 /*===== NAVBAR NINE =====*/
 .navbar-area.navbar-nine {
   background: #f84b68;
-  padding: 10px 0;
+  padding: 5px 0;
   position: absolute;
   left: 0;
   top: 0;
@@ -1490,7 +1490,13 @@ p {
 
 @media (max-width: 768px) {
   #services {
-    height: 200x;
+    height: px;
+  }
+}
+
+@media (max-width: 767px) {
+  #services {
+    height: 3300px;
   }
 }
 
