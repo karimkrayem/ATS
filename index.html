@@ -39,7 +39,7 @@
         <div class="col-lg-12">
           <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="index.html">
-              <img src="assets/images/white-logo.png" alt="Logo" />
+              <img src="assets/images/L" alt="Logo" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNine"
               aria-controls="navbarNine" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,17 +51,17 @@
             <div class="collapse navbar-collapse sub-menu-bar" id="navbarNine">
               <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                  <a class="page-scroll active" href="#hero-area">Acceuil</a>
+                  <a onclick="closeNavBar()"class="page-scroll active" href="#hero-area">Acceuil</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#services">Services</a>
+                  <a onclick="closeNavBar()"class="page-scroll" href="#services">Services</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="page-scroll" href="#pricing">Forfaits</a>
+                  <a onclick="closeNavBar()" class="page-scroll" href="#pricing">Forfaits</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#contact">Contact</a>
+                  <a onclick="closeNavBar()" class="page-scroll" href="#contact">Contact</a>
                 </li>
                 
               </ul>
@@ -89,7 +89,7 @@
     </div>
     <div class="sidebar-content">
       <div class="sidebar-logo">
-        <a href="index.html"><img src="assets/images/logo1.png" alt="Logo" /></a>
+        <a href="index.html"><img src="assets/images/Logo complet en noir-8.svg" alt="Logo" /></a>
       </div>
       <p id = "titreAts" class="text">ATS vous propose des solutions intérimaires ou d’externalisation complète de votre comptabilité.</p>
       <!-- logo -->
@@ -942,7 +942,7 @@ Si vous avez des besoins ponctuels pour des conseils fiscaux selon des projets, 
               <div class="footer-widget f-about">
                 <div class="logo">
                   <a href="index.html">
-                    <img src="assets/images/logo.png" alt="#" class="img-fluid" />
+                    <img src="assets/images/Logo complet en noir-8.svg" alt="#" class="img-fluid" />
                   </a>
                 </div>
                 <p>
@@ -1049,11 +1049,17 @@ Si vous avez des besoins ponctuels pour des conseils fiscaux selon des projets, 
     
     });
 
+    let navbarCollapse = document.querySelector(".navbar-nine .navbar-collapse");
+
+    
+
+    let closeNavBar = function(){navbarTogglerNine.classList.toggle("active")
+     navbarCollapse.classList.toggle("show")}
+
     let closeSideBar = function(){sidebarLeft.classList.remove("open");
       overlayLeft.classList.remove("open");}
-
-      
-
+    
+  
     //========= glightbox
     GLightbox({
       'href': 'https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM',

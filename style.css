@@ -464,12 +464,14 @@ p {
   transition: all 0.3s ease-out 0s;
   top: 0;
   width: 100%;
-  height: 10%;
+  height: 9%;
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px),
   (max-width: 767px) {
   .navbar-area.navbar-nine {
     padding: 10px 0;
+    height: 7%;
   }
 }
 
@@ -1120,8 +1122,8 @@ p {
   position: relative;
 }
 .carousel-inner {
-  height: 490px;
-  width: 900px;
+  height: 500px;
+  width: 750px;
   margin-left: auto;
   margin-right: auto;
   top: 10px;
@@ -1130,6 +1132,7 @@ p {
   max-width: 100%;
   max-height: 100%;
 }
+
 #hero-area h1 {
   color: white;
   bottom: 30px;
@@ -1189,7 +1192,7 @@ p {
     text-align: right;
   } */
 /* } */
-#carouselExampleIndicators .carousel-item .active {
+#carouselExampleIndicators .carousel-item {
   text-align: center;
 }
 /* .header-eight .header-content h1 span {
