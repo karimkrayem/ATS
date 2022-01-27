@@ -422,6 +422,11 @@ p {
 .section-title-five p {
   color: var(--dark-3);
 }
+@media (max-width: 280px) {
+  .section-title-five {
+    height: 400px;
+  }
+}
 
 .made-in-ayroui {
   position: fixed;
@@ -480,6 +485,12 @@ p {
 @media (max-width: 414px) {
   .sticky {
     height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sticky {
+    height: 60px;
   }
 }
 
@@ -1658,6 +1669,12 @@ p {
   height: 20px;
 }
 
+@media (max-width: 280px) {
+  .question-une {
+    font-size: 13px;
+  }
+}
+
 #quizzie .titre-quizz {
   font-size: 28px;
   border: none;
@@ -1724,6 +1741,11 @@ p {
 }
 #quizzie .question-deux {
   color: rgba(2, 0, 0, 0.555);
+}
+@media (max-width: 280px) {
+  .question-deux {
+    font-size: 13px;
+  }
 }
 #quizzie .question-wrap {
   font-size: 15px;
