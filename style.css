@@ -1490,7 +1490,7 @@ p {
 
 @media (max-width: 768px) {
   #services {
-    height: 3430px;
+    height: 200x;
   }
 }
 
@@ -1513,7 +1513,7 @@ p {
 }
 
 .section-title-four {
-  height: 350px;
+  height: 400px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1524,13 +1524,25 @@ p {
 
 @media (max-width: 768px) {
   .section-title-four {
-    height: 500px;
+    height: 400px;
   }
 }
 
 @media (max-width: 280px) {
   .section-title-four {
     height: 700px;
+  }
+}
+
+@media (max-width: 360px) {
+  .section-title-four {
+    height: 580px;
+  }
+}
+
+@media (max-width: 375px) {
+  .section-title-four {
+    height: 560px;
   }
 }
 
@@ -2296,7 +2308,7 @@ p {
 }
 
 p {
-  font-size: 0.875rem;
+  font-size: 15px;
   margin-bottom: 0.5rem;
   line-height: 1.5rem;
 }
