@@ -2,16 +2,7 @@
 
 @font-face {
   font-family: "Futura";
-  font-style: bold;
-
-  font-display: swap;
-  src: url("/assets/fonts/futara/Futura\ Bold.otf") format("woff2");
-}
-
-@font-face {
-  font-family: "Futura";
   font-style: normal;
-
   font-display: swap;
   src: url("/assets/fonts/futara/futura\ light\ bt.ttf") format("woff2");
 }
@@ -1687,7 +1678,7 @@ p {
 
 .pricing-fourteen {
   padding: 100px 0;
-  background-color: #000000;
+  background-color: #fafafa;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .pricing-fourteen {
@@ -1735,6 +1726,12 @@ p {
 @media (max-width: 244px) {
   .question-une {
     font-size: 10px;
+  }
+}
+
+@media (max-width: 224px) {
+  .question-une {
+    font-size: 8px;
   }
 }
 
@@ -1820,6 +1817,12 @@ p {
 @media (max-width: 244px) {
   .question-deux {
     font-size: 9px;
+  }
+}
+
+@media (max-width: 224px) {
+  .question-deux {
+    font-size: 8px;
   }
 }
 
